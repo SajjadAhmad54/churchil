@@ -112,6 +112,12 @@ body{
 .main-container .inner-container .menu ul li a:hover{
     color:#9f1d21; 
 }
+@media (min-width: 320px) and (max-width: 767px){
+    .main-container .inner-container .menu ul li a:hover{
+        background-color:lightgrey; 
+        display: block;
+    }
+}
      /* churchill .churchill-consulting */
 .main-container header .churchill-consulting{
     background: url('images/churchill-back_02.jpg')no-repeat;
