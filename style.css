@@ -170,7 +170,7 @@ body{
         display: grid;
         grid-template-columns: auto auto;
         grid-gap: 30px;
-        align-items: center;
+        align-items: baseline;
     }
 }
  .main-container header .churchill-consulting .inner-container .churchill-consulting-content p{
@@ -312,7 +312,7 @@ body{
   }
   @media (min-width: 320px) and (max-width: 767px){
     .main-container .churchill-services .inner-container .services-group p{
-         text-align: justify;
+         text-align: start;
     }
   }
   .main-container .churchill-services .inner-container .services-group .first-services-group .services-group-heading{
@@ -510,6 +510,7 @@ body{
      font-size: 16px;
      padding: 0px 46px;
      color: #727285;
+     text-align: justify;
  }
  @media (min-width: 320px) and (max-width: 767px){
     .main-container .churchill-news .inner-container .latest-news .lates-news-content p{
