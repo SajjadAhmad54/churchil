@@ -23,16 +23,59 @@ body{
      background-size: cover;
      height: 137px;
      width: 100%;
-      }
+}
+@media (min-width: 320px) and (max-width: 767px){
+    .main-container .navigation{
+        background: url('images/menu-box_04.jpg') no-repeat;
+        background-size: cover;
+        height: auto;
+        width: 100%;
+        padding: 10px;
+   } 
+}
 .main-container .inner-container .menu
 {
     display: grid;
     grid-template-columns: auto 1fr;
     grid-gap: 71px;
 }
+@media (min-width: 320px) and (max-width: 767px){
+    .main-container .inner-container .menu
+    {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        grid-gap:0px;
+        align-items: center;
+        justify-items: end;
+    } 
+}
+@media (min-width: 320px) and (max-width: 767px){
+    .main-container .inner-container .menu ul{
+        display: none;
+    }
+}
 .main-container .inner-container .menu .logo
 {
     align-self: center;
+}
+@media (min-width: 320px) and (max-width: 767px){
+    .main-container .inner-container .menu .logo
+    {
+        align-self: start;
+    }  
+}
+.main-container .inner-container .menu .mobile-button
+{
+    display:none;
+   
+} 
+@media (min-width: 320px) and (max-width: 767px){
+    .main-container .inner-container .menu .mobile-button
+    {
+        display: block;
+        font-size: 20px;
+        color: blue;
+    } 
 }
 .main-container .inner-container .menu ul li{
     display: inline-block;
@@ -62,6 +105,15 @@ body{
     height: 866px;
     padding-top: 200px;
  }
+ @media (min-width: 320px) and (max-width: 767px){
+    .main-container header .churchill-consulting{
+        background: url('images/churchill-back_02.jpg')no-repeat;
+        background-size: cover;
+        width: 100%;
+        padding-top: 100px;
+        padding: 10px;
+     }
+ }
  .main-container header .inner-container button{
      width: 298px;
      height: 50px;
@@ -76,10 +128,21 @@ body{
      text-transform: uppercase;
      cursor: pointer;
  }
+ @media (min-width: 320px) and (max-width: 767px){
+    .main-container header .churchill-consulting .inner-container{
+        display: grid;
+        justify-items: center;
+    }
+ }
  .main-container header .inner-container h1{
      margin-bottom: 47px;
      font-size: 70px;
      color: white;
+ }
+ @media (min-width: 320px) and (max-width: 767px){
+    .main-container header .inner-container h1{
+        font-size: 60px;
+    }
  }
  .main-container header .churchill-consulting .inner-container .churchill-consulting-content{
      display: grid;
@@ -87,6 +150,14 @@ body{
      grid-gap: 30px;
      align-items: center;
  }
+ @media (min-width: 320px) and (max-width: 767px){
+    .main-container header .churchill-consulting .inner-container .churchill-consulting-content{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 30px;
+        align-items: center;
+    }
+}
  .main-container header .churchill-consulting .inner-container .churchill-consulting-content p{
      font-size: 36px;
      color: white;
@@ -94,6 +165,61 @@ body{
  .main-container header .churchill-consulting .inner-container .churchill-consulting-content{
      margin-bottom: 88px;
  }
+            /* introduction area */
+.main-container .intro{
+    background: url('images/intro-background_02.jpg') no-repeat;
+    background-size: cover;
+    height: 552px;
+    width: 100%;
+    padding-top: 120px;
+}
+@media (min-width: 320px) and (max-width: 767px){
+    .main-container .intro{
+        background: url('images/intro-background_02.jpg') no-repeat;
+        background-size: cover;
+        height: auto;
+        width: 100%;
+      padding: 60px 10px 10px 10px;
+    }
+}
+.main-container .inner-container .churchill_difference{
+    padding: 0px 177px;
+    text-align: center;
+}
+@media (min-width: 320px) and (max-width: 767px){
+    .main-container .inner-container .churchill_difference{
+        padding: 0px 20px;
+        text-align: center;
+    } 
+}
+ .main-container .inner-container .churchill_difference h1{
+     font-size: 22px;
+    color: #0059aa;
+    margin-bottom: 68px;
+    letter-spacing: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+.main-container .inner-container .churchill_difference p{
+    margin-bottom: 54px;
+}
+.main-container .inner-container .churchill_difference button{
+    width: 278px;
+    height: 46px;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+    letter-spacing: 5px;
+    font-weight: 600;
+    line-height: 46px;
+    color: #0c3b7d;
+    border: 2px solid #00a6ff;
+    border-radius: 40px;
+}
+@media (min-width: 320px) and (max-width: 767px){
+    .main-container .inner-container .churchill_difference button{
+        margin-bottom: 30px;
+    }
+}
                  /* churchill services */
   .main-container .churchill-services{
       background: url('images/background-service_02.jpg')no-repeat;
@@ -101,6 +227,15 @@ body{
       height: 1016px;
       width: 100%;
   }  
+  @media (min-width: 320px) and (max-width: 767px){
+    .main-container .churchill-services{
+        background: url('images/background-service_02.jpg')no-repeat;
+        background-size: cover;
+        height: auto;
+        width: 100%;
+        padding: 10px;
+    } 
+  }
   .main-container .churchill-services .inner-container{
       padding-top: 115px;
   }
@@ -119,12 +254,31 @@ body{
       grid-template-columns: 1fr;
       grid-gap: 70px;
       justify-items: center;
+      justify-content: center;
   }  
+  @media (min-width: 320px) and (max-width: 767px){
+    .main-container .churchill-services .inner-container .services-group{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns:300px;
+        grid-gap: 70px;
+        justify-items: center;
+    }  
+  }
+
   .main-container .churchill-services .inner-container .services-group .first-services-group{
     display: grid;
     grid-template-columns: 320px 320px 320px;
     grid-template-rows: 1fr;
     grid-gap: 40px;
+  }
+  @media (min-width: 320px) and (max-width: 767px){
+    .main-container .churchill-services .inner-container .services-group .first-services-group{
+        display: grid;
+        grid-template-columns: 300px;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 40px;
+      }
   }
   .main-container .churchill-services .inner-container .services-group .first-services-group .services-group-heading{
       display: grid;
@@ -151,6 +305,15 @@ body{
     grid-template-columns: 320px 320px;
     grid-template-rows: 1fr;
     grid-gap: 40px;
+  }
+    @media (min-width: 320px) and (max-width: 767px){
+        .main-container .churchill-services .inner-container .services-group .second-services-group{
+            display: grid;
+            grid-template-columns: 300px ;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 40px;
+          }
+    
    }
    .main-container .churchill-services .inner-container .services-group .second-services-group .services-group-heading{
     display: grid;
@@ -184,49 +347,23 @@ body{
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
     margin-top: 50px;
-}   
-           /* introduction area */
-.main-container .intro{
-    background: url('images/intro-background_02.jpg') no-repeat;
-    background-size: cover;
-    height: 552px;
-    width: 100%;
-    padding-top: 120px;
-}
-.main-container .inner-container .churchill_difference{
-    padding: 0px 177px;
-    text-align: center;
-}
- .main-container .inner-container .churchill_difference h1{
-     font-size: 22px;
-    color: #0059aa;
-    margin-bottom: 68px;
-    letter-spacing: 5px;
-    font-family: 'Montserrat', sans-serif;
-}
-.main-container .inner-container .churchill_difference p{
-    margin-bottom: 54px;
-}
-.main-container .inner-container .churchill_difference button{
-    width: 278px;
-    height: 46px;
-    font-size: 16px;
-    outline: none;
-    cursor: pointer;
-    letter-spacing: 5px;
-    font-weight: 600;
-    line-height: 46px;
-    color: #0c3b7d;
-    border: 2px solid #00a6ff;
-    border-radius: 40px;
-}
+}  
            /* churchill news area */
  .main-container .churchill-news{
      background: url('images/news-background_02.jpg')no-repeat;
      background-size: cover;
      width: 100%;
      height: 795px;
- }     
+ } 
+ @media (min-width: 320px) and (max-width: 767px){
+    .main-container .churchill-news{
+        background: url('images/news-background_02.jpg')no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    } 
+ }    
  .main-container .churchill-news .inner-container{
      display: grid;
      grid-template-rows: 1fr;
@@ -235,6 +372,16 @@ body{
      padding-top: 90px;
      grid-gap: 84px;
  } 
+ @media (min-width: 320px) and (max-width: 767px){
+    .main-container .churchill-news .inner-container{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        padding-top: 90px;
+        grid-gap: 84px;
+    } 
+ }
  .main-container .churchill-news .inner-container h1{
      font-size: 22px;
      color: white;
@@ -242,6 +389,25 @@ body{
      letter-spacing: 4px;
      font-weight: normal;
  }
+ @media (min-width: 320px) and (max-width: 767px){
+    .main-container .churchill-news .inner-container h1{
+        font-size: 20px;
+    }
+ }
+ .main-container .churchill-news .inner-container .latest-news{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 30px;
+}
+@media (min-width: 320px) and (max-width: 767px){
+   .main-container .churchill-news .inner-container .latest-news{
+       display: grid;
+       grid-template-columns: 300px ;
+       grid-template-rows: 1fr 1fr 1fr;
+       grid-gap: 30px;
+   }
+}
  .main-container .churchill-news .inner-container button{
      width: 258px;
      height: 50px;
@@ -255,11 +421,10 @@ body{
      cursor: pointer;
      outline: none;
  }
- .main-container .churchill-news .inner-container .latest-news{
-     display: grid;
-     grid-template-columns: 1fr 1fr 1fr;
-     grid-template-rows: 1fr;
-     grid-gap: 30px;
+ @media (min-width: 320px) and (max-width: 767px){
+    .main-container .churchill-news .inner-container button{
+        margin-bottom: 30px;
+    }
  }
  .main-container .churchill-news .inner-container .latest-news .lates-news-content{
      background: url('images/news-page_03.jpg') no-repeat;
@@ -268,6 +433,16 @@ body{
      width: 350px;
      text-align: center;
    padding-top: 36px;
+ }
+ @media (min-width: 320px) and (max-width: 767px){
+    .main-container .churchill-news .inner-container .latest-news .lates-news-content{
+        background: url('images/news-page_03.jpg') no-repeat;
+        background-size: cover;
+        height: 345px;
+        width: 300px;
+        text-align: center;
+      padding-top: 36px;
+    }
  }
  .main-container .churchill-news .inner-container .latest-news .lates-news-content h1{
      font-size: 18px;
@@ -285,6 +460,12 @@ body{
  .main-container .churchill-news .inner-container .latest-news .lates-news-content img{
      margin-bottom: 30px;
  }
+ @media (min-width: 320px) and (max-width: 767px){
+    .main-container .churchill-news .inner-container .latest-news .lates-news-content img{
+        margin-bottom: 30px;
+        width: 300px;
+    }
+ }
  .main-container .churchill-news .inner-container .latest-news .lates-news-content p{
      font-size: 16px;
      padding: 0px 46px;
@@ -293,14 +474,108 @@ body{
  .main-container .churchill-news .inner-container .latest-news .lates-news-content p span{
     color: #00acf6;
  }
+
+         /* subscribe-form */
+.subscribe-form
+{
+    padding-top: 109px;
+    padding-bottom: 109px;
+    background: url('images/subscribe-box_06.jpg') no-repeat;
+    background-size: cover;
+    height: 382px;
+    width: 100%;
+}  
+@media (min-width: 320px) and (max-width: 767px){
+    .subscribe-form
+{
+    padding-top: 109px;
+    padding-bottom: 109px;
+    background: url('images/subscribe-box_06.jpg') no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    padding: 10px;
+}
+}       
+.subscribe-form .inner-container {
+   padding: 0px 95px;
+ }
+ @media (min-width: 320px) and (max-width: 767px){
+    .subscribe-form .inner-container {
+        padding: 0px 0px;
+      }
+ }
+ .subscribe-form .inner-container .person-issue{
+     margin-bottom: 52px;
+ }
+.subscribe-form .inner-container .person-issue p
+{
+    font-size: 24px;
+}
+.subscribe-form .inner-container .person-issue p span{
+    color: #66c2f4;
+}
+.subscribe-form .inner-container .person-issue-form {
+    display: grid;
+    grid-template-columns: 304px 304px 255px;
+    grid-gap: 30px; 
+}
+@media (min-width: 320px) and (max-width: 767px){
+    .subscribe-form .inner-container .person-issue-form {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns:310px;
+        grid-gap: 30px; 
+        justify-content: center;
+    }
+}
+.subscribe-form .inner-container .person-issue-form input{
+    border: 2px solid  #dbdbeb;
+    border-radius: 40px;
+    padding: 0px 15px; 
+    outline: none; 
+    height: 50px;
+    line-height: 50px;
+    font-size: 22px;
+}
+@media (min-width: 320px) and (max-width: 767px){
+    .subscribe-form .inner-container .person-issue-form input{
+        border: 2px solid  #dbdbeb;
+        border-radius: 40px;
+        padding: 0px 15px; 
+        outline: none; 
+        height: 50px;
+        line-height: 50px;
+        font-size: 22px;
+    }
+}
+input::placeholder{
+    color: #66c2f4;
+    font-weight: normal;
+}
+.subscribe-form .inner-container .person-issue-form button{ 
+    border-radius: 40px;
+    border: 2px solid #00a6ff;
+    color: #0d3c7d;
+    background: #fefdf9;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    letter-spacing: 5px;
+}
    /* footer area  */
- .main-container footer
+   .main-container footer
    {
        /* height: 600px;*/
        background-color: #4d4d4f;
-       padding-top: 120px;
+       /* padding-top: 120px;
        padding-bottom: 64px;
+       padding: 120px; */
+       padding: 10px;
    }
+ 
    .main-container footer .footer-menu-list
    {
        margin-bottom: 60px;
@@ -310,6 +585,15 @@ body{
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-gap: 86px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+    footer .footer-menu-list .inner-container
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-gap: 86px;
+    }   
 }
 .main-container  footer .footer-menu-list .inner-container .footer-menu h1{
     text-transform: capitalize;
@@ -401,11 +685,26 @@ footer .inner-container .footer-line
 {
     height: auto;
 }
+@media (min-width: 320px) and (max-width: 767px){
+    footer .inner-container .footer-line img{
+        width: 300px; 
+    } 
+}
 footer .inner-container .footer-content
 {
     display: grid;
     grid-template-columns: auto 1fr;
     justify-items: end;
+}
+@media (min-width: 320px) and (max-width: 767px){
+    footer .inner-container .footer-content
+{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns:  1fr;
+    justify-items: start;
+    grid-gap: 30px;
+}
 }
 footer .inner-container .footer-content .content p
 {
@@ -420,58 +719,4 @@ footer .inner-container .footer-content .content p span{
 }
 footer .inner-container .footer-content{
     padding-top: 50px;
-}
-         /* subscribe-form */
-.subscribe-form
-{
-    padding-top: 109px;
-    padding-bottom: 109px;
-    background: url('images/subscribe-box_06.jpg') no-repeat;
-    background-size: cover;
-    height: 382px;
-    width: 100%;
-}         
-.subscribe-form .inner-container {
-   padding: 0px 95px;
- }
- .subscribe-form .inner-container .person-issue{
-     margin-bottom: 52px;
- }
-.subscribe-form .inner-container .person-issue p
-{
-    font-size: 24px;
-}
-.subscribe-form .inner-container .person-issue p span{
-    color: #66c2f4;
-}
-.subscribe-form .inner-container .person-issue-form {
-    display: grid;
-    grid-template-columns: 304px 304px 255px;
-    grid-gap: 30px;
-   
-}
-.subscribe-form .inner-container .person-issue-form input{
-    border: 2px solid  #dbdbeb;
-    border-radius: 40px;
-    padding: 0px 15px; 
-    outline: none; 
-    height: 50px;
-    line-height: 50px;
-    font-size: 22px;
-}
-input::placeholder{
-    color: #66c2f4;
-    font-weight: normal;
-}
-.subscribe-form .inner-container .person-issue-form button{ 
-    border-radius: 40px;
-    border: 2px solid #00a6ff;
-    color: #0d3c7d;
-    background: #fefdf9;
-    font-family: 'Montserrat', sans-serif;
-    outline: none;
-    font-weight: 600;
-    font-size: 16px;
-    cursor: pointer;
-    letter-spacing: 5px;
 }
