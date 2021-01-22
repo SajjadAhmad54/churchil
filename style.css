@@ -605,7 +605,13 @@ input::placeholder{
    .main-container footer
    {
        background-color: #4d4d4f;
-       padding: 10px;
+       padding-top: 110px;
+       padding-bottom: 60px;
+   }
+   @media (min-width: 320px) and (max-width: 767px){
+    .main-container footer{
+        padding: 10px;
+    }
    }
  
    .main-container footer .footer-menu-list
