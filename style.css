@@ -189,7 +189,6 @@ body{
 @media (min-width: 320px) and (max-width: 767px){
     .main-container .inner-container .churchill_difference{
         padding: 0px 0px;
-        text-align: justify;
     } 
 }
  .main-container .inner-container .churchill_difference h1{
@@ -201,6 +200,11 @@ body{
 }
 .main-container .inner-container .churchill_difference p{
     margin-bottom: 54px;
+}
+@media (min-width: 320px) and (max-width: 767px){
+    .main-container .inner-container .churchill_difference p{
+        text-align: justify;
+    }
 }
 .main-container .inner-container .churchill_difference button{
     width: 278px;
@@ -592,11 +596,7 @@ input::placeholder{
    /* footer area  */
    .main-container footer
    {
-       /* height: 600px;*/
        background-color: #4d4d4f;
-       /* padding-top: 120px;
-       padding-bottom: 64px;
-       padding: 120px; */
        padding: 10px;
    }
  
