@@ -44,7 +44,7 @@ body{
     {
         display: grid;
         grid-template-columns: 200px 1fr;
-        grid-gap:0px;
+        grid-gap:10px;
         align-items: center;
         justify-items: end;
     } 
@@ -81,6 +81,14 @@ body{
     display: inline-block;
     line-height: 137px;
     margin-right: 35px;
+}
+@media (min-width: 320px) and (max-width: 767px){
+    .main-container .inner-container .menu ul li{
+        display: block;
+        line-height: 30px;
+        margin-bottom: 5px;
+        margin-right: 0px;
+    }
 }
 .main-container .inner-container .menu ul li a{
     text-decoration: none;
