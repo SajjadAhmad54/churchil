@@ -33,14 +33,15 @@ body{
         padding: 10px;
    } 
 }
-.main-container .inner-container .menu
+.main-container .navigation .inner-container
 {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto 837px;
     grid-gap: 71px;
+    align-items: center;
 }
 @media (min-width: 320px) and (max-width: 767px){
-    .main-container .inner-container .menu
+    .main-container .navigation .inner-container
     {
         display: grid;
         grid-template-columns: 200px 1fr;
@@ -50,16 +51,22 @@ body{
     } 
 }
 @media (min-width: 320px) and (max-width: 767px){
-    .main-container .inner-container .menu ul{
+    .main-container .navigation .inner-container .menu ul{
+        width: 100%;
         display: none;
+        position: absolute;
+        top: 74px;
+        left: 0px;
+        padding: 10px;
+        background: #ffffff;
     }
 }
-.main-container .inner-container .menu .logo
+.main-container .inner-container .logo
 {
-    align-self: center;
+        height: 61px;
 }
 @media (min-width: 320px) and (max-width: 767px){
-    .main-container .inner-container .menu .logo
+    .main-container .inner-container  .logo
     {
         align-self: start;
     }  
@@ -601,6 +608,9 @@ input::placeholder{
     cursor: pointer;
     letter-spacing: 5px;
 }
+/* .subscribe-form .inner-container .person-issue-form button:hover{
+   background-color: #66c2f4;
+} */
    /* footer area  */
    .main-container footer
    {
