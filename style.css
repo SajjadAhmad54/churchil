@@ -930,6 +930,7 @@ footer .inner-container .footer-content{
   cursor: pointer;
   letter-spacing: 5px;
   margin-bottom: 80px;
+  text-transform: uppercase;
 }
 @keyframes tonext {
     75% {
